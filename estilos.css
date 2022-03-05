@@ -1,0 +1,106 @@
+* {box-sizing: border-box;
+   margin:0;
+   padding:0;
+   font-size: 1em;
+   font-family:sans-serif;
+   font-weight:600;}
+
+@font-face {font-family: "text";
+            src: url("Helvetica2.otf");}
+
+@font-face {font-family: "text2";
+            src: url("calibri.ttf");}
+
+body {background: #161616;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;}
+
+header {width:100%;
+        text-align: center;
+        background:#0b0b0b;
+        height:47px;  
+        color: #fff;
+        padding-top: 3px;
+        margin-bottom: 2em;}
+
+h1 {font-size:2em;
+    font-family: "text";} 
+
+
+img {max-width: 300px;
+     margin-bottom: 2em;} 
+
+
+.box-1 {width:17em;
+        text-align: center;}            
+
+.box-1 p {font-size:1.5em;
+          color: #fff;
+          font-family:"text2";
+           font-weight:560;}
+
+.i-0 {position: relative;
+      top:1em;}          
+
+.boton {margin-bottom:5em;} 
+
+.boton a {font-size:1.7em;
+          margin-top:1.8em;
+          font-family: "text";
+          color: #fff;
+          text-decoration: none;
+          display:inline-block;
+          text-align: center;
+          border-radius:5px;
+          cursor: pointer;
+          background:#bd0034;
+          padding:7px;
+          text-shadow: 2px 2px 0px #1a1a1a;
+          transition-duration: 300ms;}
+
+.boton a:hover {background:#0066bd;}
+
+i {font-size:2em;
+   color: #fff;}    
+
+.i-1 {position: relative;
+      left:-1em;
+      top:0em;} 
+
+
+.i-2 {position:relative;
+      left:1em;
+      top:0em;}
+          
+h4 {color:#fff;
+    padding:4px;}
+
+footer {background:#0b0b0b;
+        width:100%;
+        height:35px;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;}
+
+footer p {flex-grow: 1;
+          padding: 4px;
+          text-align: center;
+          background:#dedede;} 
+
+@media only screen and (max-width:700px)  { 
+
+  .boton a{transition-duration: 100ms;}
+ .boton a:hover {background:#bd0034;}
+.boton a:active {background:#0066bd;}
+}        
+
+@media only screen and (max-width:350px)  { 
+
+#i-1,#i-2,#i-0 { 
+     display: none;}
+
+}
+
